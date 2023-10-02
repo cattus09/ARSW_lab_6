@@ -53,6 +53,35 @@
 
 4. Cree, en el directorio anterior, la página index.html, sólo con lo básico: título, campo para la captura del autor, botón de 'Get blueprints', campo <div> donde se mostrará el nombre del autor seleccionado, [la tabla HTML](https://www.w3schools.com/html/html_tables.asp) donde se mostrará el listado de planos (con sólo los encabezados), y un campo <div> donde se mostrará el total de puntos de los planos del autor. Recuerde asociarle identificadores a dichos componentes para facilitar su búsqueda mediante selectores.
 
+```
+<body>
+  <h1 class="titulo">Blueprints</h1>
+  <div class="autor">
+      <span>Author</span><input id="author" type="text">
+      <button onclick="app.getNameAuthorBlueprints()">Get blueprints</button>
+  </div>
+  <div class="grid">
+      <div class="tabla">
+          <h2 id="name"></h2>
+          <table id="table">
+              <thead>
+              <tr>
+                  <th>Blueprint name: </th>
+                  <th>Number of points: </th>
+                  <th>Open: </th>
+              </tr>
+              </thead>
+              <tbody>
+              </tbody>
+          </table>
+          <h2 id="totalPoints">Total user Points: </h2>
+      </div>
+
+  </div>
+</body>
+
+```
+
 5. En el elemento \<head\> de la página, agregue las referencia a las librerías de jQuery, Bootstrap y a la hoja de estilos de Bootstrap. 
     ```html
     <head>
