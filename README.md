@@ -15,6 +15,9 @@
 ## Ajustes Backend
 
 1. Trabaje sobre la base del proyecto anterior (en el que se hizo el API REST).
+
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/611a39df-7eef-4116-baa5-c1213ea747b7)
+
 2. Incluya dentro de las dependencias de Maven los 'webjars' de jQuery y Bootstrap (esto permite tener localmente dichas librerías de JavaScript al momento de construír el proyecto):
 
     ```xml
@@ -36,6 +39,9 @@
     </dependency>                
 
     ```
+
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/8c664e48-5523-467c-9bbc-f5a68b4553c3)
+
 
 ## Front-End - Vistas
 
