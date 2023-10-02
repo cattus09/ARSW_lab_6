@@ -95,6 +95,7 @@
           href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
     </head>
     ```
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/54514f44-a327-4944-bbda-a0dd067ed0cf)
 
 
 5. Suba la aplicación (mvn spring-boot:run), y rectifique:
@@ -103,6 +104,9 @@
     http://localhost:8080/index.html
     ```
     2. Al abrir la consola de desarrollador del navegador, NO deben aparecer mensajes de error 404 (es decir, que las librerías de JavaScript se cargaron correctamente).
+
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/ac24f3b0-32ec-4fae-8c23-dee1bbefe82b)
+
 
 ## Front-End - Lógica
 
