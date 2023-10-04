@@ -1,72 +1,93 @@
-/* Estilos para el cuerpo de la página */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Gloria Hallelujah', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #dfb9b9;
 }
 
-/* Estilos para el título */
-.titulo {
-    color: #007bff;
-    text-align: center;
+
+button{
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: #9a12d0;
+    color: #fff;
 }
 
-/* Estilos para el contenedor de autor */
+
+.grid {
+    display: flex;
+    grid-template-columns:50% 50%;
+    padding: 20px;
+}
+
+
 .autor {
-    text-align: center;
-    margin-top: 20px;
+    margin-bottom: 20px; 
 }
 
 .autor span {
     font-weight: bold;
+    margin-right: 10px; 
+}
+.autor {
+    width:30%;
+    display:flex;
+    justify-content:space-evenly;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
 }
 
-#author {
-    padding: 5px;
-    margin: 5px;
+
+.canvas {
+    flex: 1;
+    margin-right: 20px; 
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-#getBlueprintsButton {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-/* Estilos para el contenedor de la tabla */
-.grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-}
 
 .tabla {
-    text-align: center;
-    margin: 20px;
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-#name {
-    color: #11ff00;
-}
-
-
-table {
+#table {
     width: 100%;
     border-collapse: collapse;
 }
 
-th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
+#table th, #table td {
+    border: 1px solid #ddd;
     padding: 8px;
+    text-align: left;
 }
 
-th {
-    background-color: #f2f2f2;
+
+.button {
+    background-color: #13c37a;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 2px solid #F9DFC2;
+    border-radius: 20px;
 }
 
-#totalPoints {
-    margin-top: 20px;
-    color: #007bff;
+#getBlueprintsButton:hover {
+    background-color: #0056b3;
+}
+
+
+.autor {
+    margin-bottom: 20px;
+}
+
+.autor span {
+    font-weight: bold;
 }
