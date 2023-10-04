@@ -58,7 +58,7 @@
   <h1 class="titulo">Blueprints</h1>
   <div class="autor">
       <span>Author</span><input id="author" type="text">
-      <button onclick="app.getNameAuthorBlueprints()">Get blueprints</button>
+      <button>Get blueprints</button>
   </div>
   <div class="grid">
       <div class="tabla">
@@ -133,7 +133,12 @@
     Junto con una operación pública que permita cambiar el nombre del autor actualmente seleccionado.
 
 
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/02e088e0-e78a-4d0a-8a80-18e30404d77d)
+
+
 4. Agregue al módulo 'app.js' una operación pública que permita actualizar el listado de los planos, a partir del nombre de su autor (dado como parámetro). Para hacer esto, dicha operación debe invocar la operación 'getBlueprintsByAuthor' del módulo 'apimock' provisto, enviándole como _callback_ una función que:
+
+
 
     * Tome el listado de los planos, y le aplique una función 'map' que convierta sus elementos a objetos con sólo el nombre y el número de puntos.
 
@@ -141,7 +146,19 @@
 
     * Sobre cualquiera de los dos listados (el original, o el transformado mediante 'map'), aplique un 'reduce' que calcule el número de puntos. Con este valor, use jQuery para actualizar el campo correspondiente dentro del DOM.
 
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/22df9709-3898-4bcf-8244-1be391a559d4)
+
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/e83a06c6-794c-4db7-a4d6-2f4ef1a4d943)
+
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/719489e5-73cf-48d7-bfe2-4228c9b235fc)
+
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/a9f7f28c-fe32-4fc1-b2ee-c60ad055dee7)
+
+
 5. Asocie la operación antes creada (la de app.js) al evento 'on-click' del botón de consulta de la página.
+
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/a2697cc8-08fd-4ddd-8c8e-81de58116109)
+
 
 6. Verifique el funcionamiento de la aplicación. Inicie el servidor, abra la aplicación HTML5/JavaScript, y rectifique que al ingresar un usuario existente, se cargue el listado del mismo.
 
