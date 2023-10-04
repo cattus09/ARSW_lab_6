@@ -1,14 +1,16 @@
 var apiclient = (function(){
+    var url='http://localhost:8080/blueprints';
     return {
-        getBlueprintsByAuthor: function(author, callback){
-        callback(
-            JSON.parse($.ajax({type: 'GET', url: 'blueprints/' + author, async: false}).responseText)
-        )},
+        getBlueprintsByAuthor: function (authname, callback) {
+            $.get(url + "/blueprints/" + authname, function (data) {
+                callback(data);
+            });
+        },
 
-        getBlueprintByAuthorAndName: function(author, bpname, callback){
-        var link = author + "/" + bpname;
-        callback(
-            JSON.parse($.ajax({type: 'GET', url: 'blueprints/' + link, async: false}).responseText)
-        )}
+        getBlueprintsByNameAndAuthor: function (authname, bpname, callback) {
+            $.get(url + "/blueprints/" + authname + "/" + bpname, function (data) {
+                callback(data);
+            });
+        }
     }
 })();

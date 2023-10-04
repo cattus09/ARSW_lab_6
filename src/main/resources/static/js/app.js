@@ -1,9 +1,17 @@
-var apimock = apimock;
+var useApiClient = false;
+
+var apimodule; // Variable global para almacenar el módulo seleccionado
+
+// Condición para cargar el módulo adecuado
+if (useApiClient) {
+    apimodule = apiclient;
+} else {
+    apimodule = apimock;
+}
 
 var app = (function (){
     var author;
     var blueprintName;
-    var totalPuntos;
 
     // actualiza el contenido de author del HTML  mostrando un mensaje
     function getName() {
@@ -45,7 +53,7 @@ var app = (function (){
             // se realiza una operación de reducción (reduce) sobre el arreglo datanew para calcular la suma 
             //total de puntos de todos los planos del usuario,
             //y luego se actualiza el contenido de un elemento en el documento HTML
-            totalPuntos = datanew.reduce((suma, {puntos}) => suma + puntos, 0);
+            const totalPuntos = datanew.reduce((suma, {puntos}) => suma + puntos, 0);
 
             $("#points").text("Total user points: " + totalPuntos);
         }
@@ -55,12 +63,12 @@ var app = (function (){
         author = $("#author").val();
         blueprintName = data.id;
         $("#nameblu").text("Current blueprint: " + blueprintName);
-        apimock.getBlueprintByAuthorAndName(author, blueprintName, printPoints);
+        apimock.getBlueprintsByNameAndAuthor(author, blueprintName, printPoints);
     }
 
     function printPoints(data) {
         const puntos = data.points;
-        var c = document.getElementById("myCanvas");
+        var c = document.getElementById("canvas");
         var ctx = c.getContext("2d");
         ctx.clearRect(0, 0, c.width, c.height);
         ctx.restore();
