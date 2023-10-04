@@ -199,3 +199,6 @@
 
 
 14. Revise la [documentación y ejemplos de los estilos de Bootstrap](https://v4-alpha.getbootstrap.com/examples/) (ya incluidos en el ejercicio), agregue los elementos necesarios a la página para que sea más vistosa, y más cercana al mock dado al inicio del enunciado.
+
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/699d7dff-047f-4b65-bbc7-781c9e88a979)
+
