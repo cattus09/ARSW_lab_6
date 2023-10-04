@@ -1,0 +1,72 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el título */
+.titulo {
+    color: #007bff;
+    text-align: center;
+}
+
+/* Estilos para el contenedor de autor */
+.autor {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.autor span {
+    font-weight: bold;
+}
+
+#author {
+    padding: 5px;
+    margin: 5px;
+}
+
+#getBlueprintsButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor de la tabla */
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.tabla {
+    text-align: center;
+    margin: 20px;
+}
+
+#name {
+    color: #11ff00;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#totalPoints {
+    margin-top: 20px;
+    color: #007bff;
+}
