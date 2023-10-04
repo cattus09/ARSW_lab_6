@@ -95,7 +95,8 @@
           href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
     </head>
     ```
-![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/54514f44-a327-4944-bbda-a0dd067ed0cf)
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/2241f955-1026-4861-87a5-8446308ad4b9)
+
 
 
 5. Suba la aplicación (mvn spring-boot:run), y rectifique:
@@ -114,11 +115,16 @@
 
 2. Copie el módulo provisto (apimock.js) en la misma ruta del módulo antes creado. En éste agréguele más planos (con más puntos) a los autores 'quemados' en el código.
 
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/3f22a73b-7070-4365-88f9-7aa671b211ab)
+
+
 3. Agregue la importación de los dos nuevos módulos a la página HTML (después de las importaciones de las librerías de jQuery y Bootstrap):
     ```html
     <script src="js/apimock.js"></script>
     <script src="js/app.js"></script>
     ```
+
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/2e66e24a-ba71-4cf6-be43-7316e2d5b362)
 
 3. Haga que el módulo antes creado mantenga de forma privada:
     * El nombre del autor seleccionado.
