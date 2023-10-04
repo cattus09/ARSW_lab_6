@@ -162,19 +162,40 @@
 
 6. Verifique el funcionamiento de la aplicación. Inicie el servidor, abra la aplicación HTML5/JavaScript, y rectifique que al ingresar un usuario existente, se cargue el listado del mismo.
 
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/06b12c93-84f2-4ad3-88a3-b374f784ae2d)
+
+
 ## Para la próxima semana
 
 8. A la página, agregue un [elemento de tipo Canvas](https://www.w3schools.com/html/html5_canvas.asp), con su respectivo identificador. Haga que sus dimensiones no sean demasiado grandes para dejar espacio para los otros componentes, pero lo suficiente para poder 'dibujar' los planos.
 
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/b58bf895-6bd4-4de4-8e78-fc9f3e08380b)
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/3e10a39d-f28b-44e1-9ccb-646ee683b57a)
+
+
 9. Al módulo app.js agregue una operación que, dado el nombre de un autor, y el nombre de uno de sus planos dados como parámetros, haciendo uso del método getBlueprintsByNameAndAuthor de apimock.js y de una función _callback_:
     * Consulte los puntos del plano correspondiente, y con los mismos dibuje consectivamente segmentos de recta, haciendo uso [de los elementos HTML5 (Canvas, 2DContext, etc) disponibles](https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_canvas_tut_path)* Actualice con jQuery el campo <div> donde se muestra el nombre del plano que se está dibujando (si dicho campo no existe, agruéguelo al DOM).
+
+
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/b8efaa19-3b3c-4f31-ba93-29ba549d9951)
+
 
 10. Verifique que la aplicación ahora, además de mostrar el listado de los planos de un autor, permita seleccionar uno de éstos y graficarlo. Para esto, haga que en las filas generadas para el punto 5 incluyan en la última columna un botón con su evento de clic asociado a la operación hecha anteriormente (enviándo como parámetro los nombres correspondientes).
 
 11. Verifique que la aplicación ahora permita: consultar los planos de un auto y graficar aquel que se seleccione.
 
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/01478cfe-92bc-41d4-a0ff-bc93b937fd19)
+
+
+
 12. Una vez funcione la aplicación (sólo front-end), haga un módulo (llámelo 'apiclient') que tenga las mismas operaciones del 'apimock', pero que para las mismas use datos reales consultados del API REST. Para lo anterior revise [cómo hacer peticiones GET con jQuery](https://api.jquery.com/jquery.get/), y cómo se maneja el esquema de _callbacks_ en este contexto.
 
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/d870e771-a7ae-4e3c-9282-26e096ef46fe)
+
+
 13. Modifique el código de app.js de manera que sea posible cambiar entre el 'apimock' y el 'apiclient' con sólo una línea de código.
+
+![image](https://github.com/cattus09/ARSW_lab_6/assets/98556822/b80690e4-bff8-4fbb-9813-d0d47e561c27)
+
 
 14. Revise la [documentación y ejemplos de los estilos de Bootstrap](https://v4-alpha.getbootstrap.com/examples/) (ya incluidos en el ejercicio), agregue los elementos necesarios a la página para que sea más vistosa, y más cercana al mock dado al inicio del enunciado.
